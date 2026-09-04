@@ -1,0 +1,114 @@
+/* Puxando a fonte d */
+@font-face {
+    font-family: "Unica One";
+    src: url("./fonts/UnicaOne-Regular.ttf") format("truetype");
+}
+
+/* Puxando a fonte do corpo do texto */
+@font-face {
+    font-family: "Tahoma Regular";
+    src: url("./fonts/Tahoma Regular font.ttf") format("truetype");
+}
+
+/* Definindo variáveis dentro do CSS */
+
+:root {
+    --fonte-titulo: "Unica One";
+    --fonte-texto: "Tahoma";
+    --fonte-titulo-perfil: "Space Grotesk";
+    --fonte-titulo-portfolio: "Baloo 2";
+}
+
+
+
+/* Estilizações bases */
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1ª PARTE - PORTFÓLIO */
+
+header {
+    background-color: plum;
+    width: 80%;
+    height: 500px;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1{
+    position: absolute;
+    top: 6%;
+    left: 10%;
+    font-family: var(--fonte-titulo-portfolio);
+    font-weight: 800;
+    font-size: clamp(60px, 10vw, 150px);
+    color: #821919;
+}
+
+
+/* 2ª PARTE - SOBRE MIM */
+
+section {
+    background-color: #FBE9E9;
+    width: 80%;
+    height: 500px;
+    max-height: 100%;
+    display: flex;
+    gap: 0;
+}
+
+#cx_sobreMim {
+    background-color: #B06868;
+    width: 20%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+#cx_fotoPerfil {
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+    background-color: #F28B8B;
+}
+
+#cx_habilidades {
+    background-color: #B06868;
+    width: 40%;
+    height: 20%;
+    border-radius: 20px;
+}
+
+/* 2ª PARTE - PERFIL */
+
+#cx_perfil{
+    font-family: var(--fonte-titulo-perfil);
+}
+
+/* 3ª PARTE - FORMAÇÃO ACADÊMICA */
+
+#cx_formacao {
+    background-color: #B06868;
+    width: 30%;
+    height: 40%;
+    border-radius: 20px;
+}
+
+/* 4ª PARTE - CURSOS E CERTIFICADOS */
+
+#fitaExposta{
+    background-color: #8f51b3;
+    width: 100%;
+    height: 30%;
+}
+
+.certificados{
+    background-color: #F28B8B;
+    width: 20%;
+    height: 20%;
+    border-radius: 20px;
+}
