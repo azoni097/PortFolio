@@ -1,0 +1,191 @@
+:root {
+    --fonte-titulo: "Unica One";
+    --fonte-texto: "Tahoma";
+    --fonte-titulo-perfil: "Space Grotesk";
+    --fonte-titulo-portfolio: "Baloo 2";
+
+    --cor-texto: #821919;
+}
+/*----- Limpa as margens e espaçamentos da página -----*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*----- Configuração da rolagem da página -----*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*----- Estilização do body*/
+body{
+    font-family: var(--fonte-titulo-perfil);
+    color: var(--cor-texto);
+    line-height: 1.5;
+}
+
+/*Limpa a configuração padrão dos links*/
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Estilização padrão dos títulos tipo "tag HTML" de cada seção*/
+
+.tag-secao{
+    display: inline-block;
+    font-family: var(--fonte-texto);
+    font-size: 26px;
+    color: plum;
+    background-color: rgb(15, 157, 139, 0.1);
+    padding: 4px 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+/*----- Estilização padrão para os containers do main -----*/
+
+.container{
+    width: 100%;
+    max-width: 1100px;
+}
+
+/*----- Estilização padrão de botões -----*/
+
+.botao{
+    display: inline-block;
+    font-family: var(--fonte-titulo-portfolio);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border-radius: 999px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botao:hover{
+    transform: translate(-2px);
+}
+
+/*----- Estilização do primeiro botão -----*/
+
+.botao-primario{
+    background-color: plum;
+    color: white;
+    box-shadow: 0 8px 20px gray;
+}
+
+.botao-primario:hover{
+    background-color: rgb(228, 192, 228);
+}
+
+/*----- Estilização do segundo botão -----*/
+
+.botao-secundario{
+    border: 2px solid plum;
+    color: plum;
+}
+
+.botao-secundario:hover{
+    color: #821919;
+    border-color: #821919;
+}
+
+/*----- CABEÇALHO -----*/
+
+.cabecalho{
+    position: sticky;
+    background-color: rgb(238, 238, 238);
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgb(204, 204, 204);
+
+}
+
+.cabecalho .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.menu{
+    display: flex;
+    gap: 32px;
+}
+
+.menu a{
+    font-size: 20px;
+    padding-bottom: 4px;
+    position: relative;
+}
+
+.menu a::after{
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #821919;
+    transition: width 0.25s ease;
+    position: absolute;
+}
+
+.menu a:hover::after{
+    width: 100%;
+}
+
+.nome{
+    font-family: var(--fonte-titulo-perfil);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nome span{
+    color: #821919;
+}
+
+/*----- APRESENTAÇÃO -----*/
+
+.apresentacao{
+    padding: 96px;
+    background-color: antiquewhite;
+}
+
+.apresentacao .container{
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.apresentacao-titulo{
+    font-size: 50px;
+    font-family: var(--fonte-titulo-perfil);
+    margin-bottom: 16px;
+}
+
+.apresentacao-titulo .destaque{
+    font-family: var(--fonte-titulo-portfolio);
+}
+
+.apresentacao-cargo{
+    font-family: var(--fonte-titulo-portfolio);
+    color: #821919;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.apresentacao-bio{
+    color: #821919;
+    font-size: 20px;
+    max-width: 480px;
+    margin-bottom: 20px;
+}
+
+.apresentacao-foto img{
+    border-radius: 24px;
+    background-color: white;
+}
