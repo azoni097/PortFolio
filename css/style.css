@@ -1,48 +1,69 @@
-/* Puxando a fonte d */
-@font-face {
-    font-family: "Unica One";
-    src: url("./fonts/UnicaOne-Regular.ttf") format("truetype");
-}
-
-/* Puxando a fonte do corpo do texto */
-@font-face {
-    font-family: "Tahoma Regular";
-    src: url("./fonts/Tahoma Regular font.ttf") format("truetype");
-}
-
 /* Definindo variáveis dentro do CSS */
 
 :root {
-    --fonte-titulo: "Unica One";
-    --fonte-texto: "Tahoma";
+    --fonte-texto: "Valley Sans";
     --fonte-titulo-perfil: "Space Grotesk";
     --fonte-titulo-portfolio: "Baloo 2";
 }
 
-
-
-/* Estilizações bases */
+/*----- Estilizações bases -----*/
 
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
 
-/* 1ª PARTE - PORTFÓLIO */
-
 header {
-    background-color: plum;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body section {
+    background-color: white;
+    width: 100%;
+    height: 580px;
+    display: flex;
+}
+
+/*----- 1ª PARTE - NAVEGAÇÃO -----*/
+
+#cx_nav{
+    background-color: #FBE9E9;
+    width: 100%;
+    height: 80px;
+    font-family: var(--fonte-texto);
+    color: #821919;
+}
+
+#cx_nav a{
+    font-family: var(--fonte-texto);
+    color: #821919;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#cx_banner {
     width: 80%;
     height: 500px;
     max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
     position: relative;
     overflow: hidden;
 }
 
-header h1{
+#cx_banner h1{
     position: absolute;
-    top: 6%;
+    top: 10%;
     left: 10%;
     font-family: var(--fonte-titulo-portfolio);
     font-weight: 800;
@@ -50,65 +71,177 @@ header h1{
     color: #821919;
 }
 
-
-/* 2ª PARTE - SOBRE MIM */
-
-section {
-    background-color: #FBE9E9;
-    width: 80%;
-    height: 500px;
-    max-height: 100%;
-    display: flex;
-    gap: 0;
+#cx_banner img{
+    margin-left: 50%;
+    width: 50%;
 }
 
-#cx_sobreMim {
+/*----- 2ª PARTE - PORTFOLIO -----*/
+
+.container_perfil{
+    background-color: #FBE9E9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cx_perfil{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #B06868;
-    width: 20%;
-    height: 70%;
+    width: 350px;
+    height: 60%;
     border-radius: 20px;
+    position: relative;
+    margin-right: 12%;
+}
+
+#cx_perfil h1{
+    margin-top: 45%;
+    margin-left: -37%;
+    margin-bottom: 0;
+    font-family: var(--fonte-titulo-perfil);
+}
+
+#cx_perfil p{
+    margin-top: 1%;
+    font-family: var(--fonte-texto);
+    margin-bottom: 0;
+    margin-left: 3%;
+    margin-right: 2%;
 }
 
 #cx_fotoPerfil {
     border-radius: 50%;
-    width: 20%;
-    height: 20%;
+    width: 300px;
+    height: 300px;
     background-color: #F28B8B;
+    position: absolute;
+    transform: translate(45%, -33%);
+
 }
 
-#cx_habilidades {
-    background-color: #B06868;
-    width: 40%;
-    height: 20%;
+#cx_sobreMim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #706676;
+    width: 350px;
+    height: 80%;
     border-radius: 20px;
 }
 
-/* 2ª PARTE - PERFIL */
+#cx_sobreMim h1{
+    font-family: var(--fonte-titulo-perfil);
+    margin-top: 5%;
+}
 
-#cx_perfil{
+#cx_sobreMim p{
+    font-family: var(--fonte-texto);
+    margin: 5%;
+}
+
+/*----- 3ª PARTE - FORMAÇÃO ACADÊMICA -----*/
+
+.container_educacao{
+    background-color: white;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cx_formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #706676;
+    width: 350px;
+    height: 70%;
+    border-radius: 20px;
+    margin-right: 10%;
+}
+
+#cx_formacao h1{
     font-family: var(--fonte-titulo-perfil);
 }
 
-/* 3ª PARTE - FORMAÇÃO ACADÊMICA */
-
-#cx_formacao {
-    background-color: #B06868;
-    width: 30%;
-    height: 40%;
-    border-radius: 20px;
+#cx_formacao p{
+    font-family: var(--fonte-texto);
+    margin: 5%;
 }
 
-/* 4ª PARTE - CURSOS E CERTIFICADOS */
+#cx_habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B06868;
+    width: 420px;
+    height: 60%;
+    border-radius: 20px;
+    margin-bottom: -4%;
+}
+
+#cx_habilidades h1{
+    font-family: var(--fonte-titulo-perfil);
+}
+
+#cx_habilidades p{
+    font-family: var(--fonte-titulo-perfil);
+    margin: 5%;
+}
+
+
+/*----- 4ª PARTE - CURSOS E CERTIFICADOS -----*/
+
+
+.container_ferramentas{
+    background-color: #FBE9E9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cx_titulo{
+    margin-left: -40%;
+    margin-top: -18%;
+    margin-bottom: 10%;
+    font-family: var(--fonte-titulo-perfil);
+    color: #821919;
+}
 
 #fitaExposta{
-    background-color: #8f51b3;
+    background-color: #706676;
     width: 100%;
-    height: 30%;
+    height: 13%;
+    position: relative;
+}
+
+.cx_certificados{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 55%;
+    height: 50%;
 }
 
 .certificados{
     background-color: #F28B8B;
-    width: 20%;
-    height: 20%;
+    width: 33%;
+    height: 100%;
     border-radius: 20px;
+    margin-right: 2%;
 }
+
+
+/*----- 5ª PARTE - SOFTWARES -----*/
+
+
+
+
