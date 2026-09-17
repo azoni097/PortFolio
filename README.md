@@ -1,4 +1,4 @@
-# ✦ Yuri Mitsuko — Portfólio
+# ✦ Vitória Azoni — Portfólio
 
 Olá! Eu sou **Vitória Azoni**, estudante de **Análise e Desenvolvimento de Sistemas** no SENAI Conectividade da Vila Mariana e formada em **Informática para Internet pela ETEC Jornalista Roberto Marinho**.
 
