@@ -18,12 +18,13 @@ body {
 header {
     width: 100%;
     display: flex;
+    height: 600px;
     flex-direction: column;
     align-items: center;
 }
 
 main {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,18 +33,42 @@ main {
 body section {
     background-color: white;
     width: 100%;
-    height: 580px;
+    height: 650px;
     display: flex;
 }
 
-/*----- 1ª PARTE - NAVEGAÇÃO -----*/
+span{
+    color: palevioletred;
+}
 
-#cx_nav{
-    background-color: #FBE9E9;
-    width: 100%;
+/*-------------------- 1ª PARTE - NAVEGAÇÃO --------------------*/
+
+#container-nav{
+    top: 0;
+    background-color: rgb(251, 233, 233, 0.9);
+    width: 80%;
     height: 80px;
     font-family: var(--fonte-texto);
     color: #821919;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50%;
+    position: fixed;
+    backdrop-filter: blur(8px);
+    z-index: 100;
+}
+
+#container-nav h4{
+    font-size: 25px;
+    margin-left: 2%;
+}
+
+#cx_nav{
+    font-family: var(--fonte-texto);
+    color: #821919;
+    display: flex;
+    gap: 5%;
 }
 
 #cx_nav a{
@@ -51,6 +76,23 @@ body section {
     color: #821919;
     text-decoration: none;
     font-weight: 600;
+    font-size: 25px;
+    position: relative;
+}
+
+#cx_nav a::after{
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #821919;
+    transition: width 0.25s ease;
+    position: absolute;
+}
+
+#cx_nav a:hover::after{
+    width: 100%;
 }
 
 #cx_banner {
@@ -63,8 +105,8 @@ body section {
 
 #cx_banner h1{
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 18%;
+    left: 5%;
     font-family: var(--fonte-titulo-portfolio);
     font-weight: 800;
     font-size: clamp(60px, 10vw, 150px);
@@ -72,11 +114,12 @@ body section {
 }
 
 #cx_banner img{
+    overflow: hidden;
     margin-left: 50%;
     width: 50%;
 }
 
-/*----- 2ª PARTE - PORTFOLIO -----*/
+/*-------------------- 2ª PARTE - PORTFOLIO --------------------*/
 
 .container_perfil{
     background-color: #FBE9E9;
@@ -144,7 +187,7 @@ body section {
     margin: 5%;
 }
 
-/*----- 3ª PARTE - FORMAÇÃO ACADÊMICA -----*/
+/*-------------------- 3ª PARTE - FORMAÇÃO ACADÊMICA --------------------*/
 
 .container_educacao{
     background-color: white;
@@ -195,7 +238,7 @@ body section {
 }
 
 
-/*----- 4ª PARTE - CURSOS E CERTIFICADOS -----*/
+/*-------------------- 4ª PARTE - CURSOS E CERTIFICADOS --------------------*/
 
 
 .container_certificados{
@@ -208,9 +251,9 @@ body section {
 }
 
 #cx_titulo{
-    margin-left: -40%;
+    margin-left: -55%;
     margin-top: -13%;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     font-family: var(--fonte-titulo-perfil);
     color: #821919;
 }
@@ -238,16 +281,41 @@ body section {
     height: 80%;
     border-radius: 20px;
     margin-right: 2%;
+    transform: translate(45%, 5%);
 }
 
-
-/*----- 5ª PARTE - SOFTWARES -----*/
+/*-------------------- 5ª PARTE - SOFTWARES --------------------*/
 
 .container_ferramentas{
-    background-color: #FBE9E9;
     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
+
+#fitaExpostaFerramenta{
+    background-color: #706676;
+    width: 100%;
+    height: 13%;
+    position: relative;
+    font-family: var(--fonte-titulo-perfil);
+}
+
+#fitaExpostaFerramenta h1{
+    margin-left: 50%;
+    font-family: var(--fonte-titulo-perfil);
+}
+
+#cx-img-ferramenta{
+    background-color: #F28B8B;
+    width: 20%;
+    height: 20%;
+    border-radius: 20px;
+    margin-right: 2%;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-65%, 0%);
+}
+
+/*-------------------- 6ª PARTE - RODAPÉ --------------------*/
