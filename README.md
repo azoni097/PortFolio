@@ -38,16 +38,11 @@ Este repositório reúne meu **portfólio oficial**, apresentando projetos acad�
 
 A ideia é registrar minha evolução, explorar diferentes tecnologias e demonstrar na prática aquilo que venho aprendendo.
 
-## 🌐 Portfólio
-
-**Acesse meu portfólio:**
-→ [Em breve]
-
 ## 📫 Contato
 
-* **LinkedIn:** [Em breve]
-* **GitHub:** [@seu-usuario]
-* **E-mail:** [seu-e-mail]
+* **LinkedIn:** [www.linkedin.com/in/vitoriaazoni]
+* **GitHub:** [@azoni097]
+* **E-mail:** [vitoriaaamaral8@gmail.com]
 
 ---
 
