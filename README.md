@@ -41,7 +41,7 @@ A ideia é registrar minha evolução, explorar diferentes tecnologias e demonst
 ## 📫 Contato
 
 * **LinkedIn:** [www.linkedin.com/in/vitoriaazoni]
-* **GitHub:** [@azoni097]
+* **GitHub:** [azoni097]
 * **E-mail:** [vitoriaaamaral8@gmail.com]
 
 ---
