@@ -1,5 +1,6 @@
 # ✦ Vitória Azoni — Portfólio
 ![Status](https://img.shields.io/badge/status-em%20andamento-yellow?style=for-the-badge)
+
 Olá! Eu sou **Vitória Azoni**, estudante de **Análise e Desenvolvimento de Sistemas** no SENAI Conectividade da Vila Mariana e formada em **Informática para Internet pela ETEC Jornalista Roberto Marinho**.
 
 Tenho interesse em unir **tecnologia, desenvolvimento e design**, buscando criar projetos que sejam não apenas funcionais, mas também visualmente bem estruturados e agradáveis de utilizar.
